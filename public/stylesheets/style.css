@@ -1,0 +1,61 @@
+body {
+  display: flex;
+  justify-content: center;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: rgb(108, 201, 255);
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 150px;
+  padding: 50px;
+  width: 50%;
+  background-color: aliceblue;
+  border-radius: 10px;
+}
+
+form{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+label{
+  font-size: 20px;
+}
+
+input{
+  margin: 20px 0px;
+  border: 1px solid rgb(108, 201, 255);
+  border-radius: 5px;
+  height: 30px;
+  font-size: 20px;
+}
+
+button{
+  margin: 25px;
+  width: 150px;
+  height: 50px;
+  border: 1px solid rgb(108, 201, 255);
+  border-radius: 5px;
+  background-color: black;
+  color: whitesmoke;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+span{
+  font-weight: bold;
+  font-size: 16px;
+  margin-left: 20px;
+}
+
+.err{
+  color: rgb(190, 0, 0);
+}
+
+.reset{
+  color:  rgb(108, 201, 255) ;
+}

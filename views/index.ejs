@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculadora KW</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Calculadora KW</h1>
+      <form action="/?_method=PUT" method="post">
+        <label>Ingrese cantidad de kW del Medidor de Edenor</label>
+        <div>
+        <input name="medidor" type="number"> <span>Ult. Valor: <%= valorP %></span>
+        </div>
+        <label>Ingrese cantidad de kW del Medidor Interno</label>
+        <div>
+        <input name="medidor2" type="number"> <span>Ult. Valor: <%= valorP2 %></span>
+        </div>
+        <button type="submit">CALCULAR</button>
+      </form>
+      <%  if(pago<0 || pago2<0 || valor <-1 ){ %>
+          <h1 class="err">ERROR - DATOS MAL INGRESADOS, VUELVA A INGRESAR
+          </h1>
+      <% } %>
+      <%  if(valor==-1){ %>
+        <h1 class="reset">DATOS RESTABLECIDOS DESDE 0</h1>
+      <% } %>
+      <h1>El medidor EDENOR debera pagar: $<%= pago %></h1>
+      <h1>El otro medidor debera pagar: $<%= pago2 %></h1>
+    </div>
+  </body>
+</html>
